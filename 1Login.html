@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+    <link href="style.css" rel="stylesheet" type ="text/css">
+    <link href="./css/Login.css" rel="stylesheet" type ="text/css">
+	<script src="./script".js></script>
+</head>
+<body>
+	 <div class="login-box">
+		<img class="logo" src="./img/logo.png" alt="logo" width="200px">
+		 <br><br>
+		<form method ="post" name="loginform" action="2TransactionSearch.html" onsubmit="">
+			<div class="user-box">		
+				<input type="text" id="id" name="userid" maxlength="8" required ><br>
+				<label>Username</label>
+			</div><!--user-box end-->
+			<div class="user-box">	
+				<input type="password" id="password" name="password" required ><br>
+				<label>Password</label>
+			</div><!--user-box end-->
+			<input type="submit" value="LOGIN" class="login_btn">	 
+		</form>
+	</div><!--login-box end-->
+</body>
+</html>

@@ -1,0 +1,402 @@
+/* 印刷時の用紙設定 */
+@page {
+    size: A4; /* 用紙サイズ */
+    margin: 0; /* ヘッダー・フッダーを無効化 */
+  }
+  
+  /* 要素の初期化 */
+  * {
+    /* マージン・パディングをリセットした方がデザインしやすい */
+
+    /* デフォルトのフォント */
+    color: black;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
+      sans-serif;
+    font-size: 11pt;
+    font-weight: normal;
+    /* 背景色・背景画像を印刷する（Chromeのみで有効） */
+    -webkit-print-color-adjust: exact;
+  }
+  
+  /* リスト初期化 */
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  /* ページレイアウト (section.sheet を１ページとする) */
+  .sheet {
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    page-break-after: always;
+  
+    /* 用紙サイズ A4 */
+    height: 297mm;
+    width: 210mm;
+  
+    /* 余白サイズ */
+    padding-top: 10mm;
+    padding-left: 27mm;
+    padding-right: 27mm;
+  }
+  
+  /* プレビュー用のスタイル */
+  body {
+    background: #f3f2f2;
+  }
+  .sheet {
+    background: white; /* 背景を白く */
+    box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3); /* ドロップシャドウ */
+    margin: 50px auto;
+  }
+
+  .sheet_view {
+    padding-top: 10mm;
+    padding-left: 10mm;
+    padding-right: 10mm;
+    margin: 10px 10px;
+    display: inline-block; 
+    flex: right;
+  }
+
+  /*請求書編集フォームレイアウト*/
+  .direct_sheet {
+    width: 380px;
+    padding:10px 10px;
+    box-sizing: border-box;
+    display: inline-block; 
+    position: relative;
+    flex: left;
+    top: -340px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  /*フォーム*/
+  .cp_iptxt input {
+    transition: 0.1s;
+    border: 1px solid #1b2538;
+    border-radius: 4px;
+    outline: none;
+  }
+  .cp_iptxt input:focus {
+    border: 2px solid rgb(124, 206, 124);
+  }
+  .cp_iptxt input {
+    padding-left: 10px;
+  }
+
+  .cp_iptxt textarea {
+    transition: 0.1s;
+    border: 1px solid #1b2538;
+    border-radius: 4px;
+    outline: none;
+  }
+  .cp_iptxt textarea:focus {
+    border: 2px solid rgb(124, 206, 124);
+  }
+  .cp_iptxt textarea {
+    padding-left: 10px;
+  }
+
+  /*ボタン*/
+  .btn {
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 3px 20px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    transition: .25s;
+    border-radius: 5px;
+    border: 2px solid transparent;
+  }
+
+  
+
+  /*ページヘッド*/
+  .page_head {
+    width: 210mm;
+    height: 10mm;
+    margin: 10px auto;
+    margin-bottom: 0px;
+  }
+
+  .btn_content {
+    margin-bottom: 30px;
+  }
+
+
+  .back {
+    float: left;
+    background-color: gray;
+    margin-right: 10px;
+  }
+
+  .back:focus,
+  .back:hover {
+    background-color:#f3f2f2;
+    border-color: currentColor;
+    color: gray;
+  }
+
+  .direct {
+    float: left;
+    background-color: rgb(124, 206, 124);
+    margin-right: 10px;
+  }
+
+  .direct:focus,
+  .direct:hover {
+    background-color:#f3f2f2;
+    border-color: currentColor;
+    color:rgb(124, 206, 124);
+  }
+
+  .delete {
+    float: left;
+    background-color: rgb(233, 78, 78);
+    margin-right: 10px;
+  }
+
+  .delete:focus,
+  .delete:hover {
+    background-color:#f3f2f2;
+    border-color: currentColor;
+    color: rgb(233, 78, 78);
+  }
+
+  .mail_tr {
+    float: right; 
+    background-color: rgb(124, 206, 124);
+  }
+
+  .mail_tr:focus,
+  .mail_tr:hover {
+    background-color:#f3f2f2;
+    border-color: currentColor;
+    color:rgb(124, 206, 124);
+  }
+
+  .save_btn {
+    width: 50%;
+    margin: 20px 100px;
+    background-color: rgb(124, 206, 124);
+  }
+
+  .save_btn:focus,
+  .save_btn:hover {
+    background-color:#f3f2f2;
+    border-color: currentColor;
+    color:rgb(124, 206, 124);
+  }
+  
+  /* 汎用クラス */
+  .text-left {
+    text-align: left;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .clear-element {
+    clear: both;
+  }
+
+  span {
+    color: red;
+  }
+  
+  /* 大枠の指定 */
+  
+  div.row_1 {
+    height: 14mm;
+  }
+  div.row_2 {
+    height: 12mm;
+  }
+  
+  div.row_3 {
+    height: 55mm;
+  }
+  div.col_1 {
+    width: 90mm;
+    float: left;
+  }
+  div.col_2 {
+    width: 63mm;
+    position: relative;
+    padding-top: 10mm;
+    float: left;
+  }
+  div.row_4 {
+    height: 18mm;
+  }
+  div.row_5 {
+    height: 135mm;
+  }
+  div.row_6 {
+    height: 30mm;
+  }
+
+  div.col302_1 {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  div.col302_2 {
+    display: inline-block;
+  }
+
+  
+  
+  /* 個別のスタイル指定 */
+  
+  .direct_sheet h2 {
+    padding: 10px 10px;
+    border-radius: 3px;
+    background-color: rgb(81, 199, 81);
+    color: white;
+    text-align: center;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  form p {
+    margin-bottom: 20px;
+  }
+  /* タイトル */
+  h1 {
+    background: white;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 30px;
+    color: black;
+  }
+  
+  /* 顧客名・自社名 */
+  h2 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+
+  
+  /* 顧客名 */
+  h2.customer_name {
+    text-decoration: underline;
+  }
+
+  h2.request_name {
+    width: 400px;
+    text-decoration: underline;
+  }
+  
+  
+
+  .direct_sheet h3 {
+    font-weight: bold;
+  }
+
+
+  
+  
+  /* テーブル共通 */
+  table,
+  th,
+  td {
+    border: 1px black solid;
+    border-collapse: collapse;
+    padding: 1px 5px;
+  }
+  
+  table th {
+    background: rgb(189, 187, 187);
+    font-weight: normal;
+    color: black;
+  }
+  table td {
+    text-align: right;
+  }
+  
+  /* テーブル 総額欄 */
+  table.summary {
+    width: 80mm; 
+  }
+  table.summary th {
+    font-size: 14pt;
+    width: 32mm;
+  }
+  table.summary td {
+    font-size: 14pt;
+    width: 40mm;
+  }
+
+  /*支払い期限*/
+  .pay-deadline {
+    float: right;
+    text-decoration: underline;
+  }
+  
+  /* テーブル 明細欄 */
+  table.detail {
+    width: 100%;
+  }
+  table.detail tr {
+    height: 6mm;
+  }
+  table.detail th.number {
+    width: 5%;
+  }
+  table.detail th.trade_code {
+    width: 10%;
+  }
+  table.detail th.com_name {
+    width: 18%;
+  }
+  table.detail th.pay_shop {
+    width: 17%;
+  }
+
+  table.detail th.pay_date {
+    width: 15%;
+  }
+
+  table.detail th.commision {
+    width: 15%;
+  }
+
+  table.detail th.subtotal {
+    width: 15%;
+  }
+  
+  table.detail td.space {
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+  }
+
+  table.detail td.dendulum {
+    text-align: left;
+  }
+
+  table.detail tr.dataline:nth-child(odd) td {
+    background-color: #ffffff;
+  }
+  table.detail tr.dataline:nth-child(even) td {
+    background-color: #ffffff;
+  }
+
+  table.check th {
+    font-size: 14pt;
+    width: 50mm;
+    height: 30mm;
+  }
+  table.check td {
+    width: 160mm;
+    height: 30mm;
+  }
+
+  

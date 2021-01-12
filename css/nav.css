@@ -1,0 +1,52 @@
+/*************header_start*****************/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 50px;
+   }
+   
+   /* navigation*/
+   .logo{
+    padding: 10px 20px;
+    height: 40px;
+   }
+   .navi li a{
+       text-decoration:none;
+       color: black;
+   }
+   
+   .navi li{
+       display: inline-block;
+       padding: 10px 20px;
+       transition: all 0.3s ease 0s;
+   }
+   
+   .navi li:hover{
+       background-color:#bfc3c4;
+   }
+   
+   .navi li.active{
+       background-color:#00e290; 
+       padding: 10px 20px;
+   }
+   .navi li.active a{
+       color:#ffffff;
+   }
+   
+   .logoff button{
+       order:3;
+       margin:20px 0;
+       padding: 9px 25px;
+       background-color: #00e290;
+       border: none;
+       border-radius: 20px;
+       cursor: pointer;
+       transition: all 0.3s ease 0s;
+       color:#ffffff;
+   }
+   
+   .logoff button:hover{
+       background-color: #bfc3c4;	
+       color: black;
+   }

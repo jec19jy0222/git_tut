@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html　lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>取引詳細</title>
+        <link href="./css/style.css" rel="stylesheet" type ="text/css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <script src="./script".js></script>
+    </head>
+<body>
+    <header>
+		<img class="logo" src="./img/logo.png" alt="logo">
+		<nav>
+			<ul class="navi">
+				<li><a href="2TransactionSearch.html">取引検索</a></li>
+				<li><a href="3InvoiceList.html">請求書</a></li>
+				<li><a href="4SendingMoneyList.html">振込一覧</a></li>
+				<li><a href="5Calculation.html">精算管理</a></li>
+				<li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+				<li class="active"><a href="8SellercompanyList.html">事業者管理</a></li>
+			</ul>
+		</nav>
+		<a class="logoff" href=""><button>ログオフ</button></a>
+	</header>
+    <form method="post" action="803NewSellerCheck.html">
+        <div class="reg-form">
+            <h1>新規事業者登録</h1>
+            <div class="txtb">
+                <label>事業者番号:</label>
+                <input type="text" name="" value="" placeholder="企業番号を入力">
+              </div>
+            <div class="txtb">
+              <label>事業者名:</label>
+              <input type="text" name="" value="" placeholder="会社名を入力">
+            </div>
+            <div class="txtb">
+                <label>事業者名(ふりがな) :</label>
+                <input type="text" name="" value="" placeholder="会社名をふりがなで入力">
+              </div>
+    
+            <div class="txtb">
+              <label>住所 :</label>
+              <input type="text" name="" value="" placeholder="住所を入力">
+            </div>
+        
+            <div class="txtb">
+              <label>担当者名 :</label>
+              <input type="text" name="" value="" placeholder="担当者名を入力">
+            </div>
+            <div class="txtb">
+                <label>電話番号 :</label>
+                <input type="text" name="" value="" placeholder="電話番号を入力">
+            </div>
+            <div class="txtb">
+                <label>メールアドレス :</label>
+                <input type="email" name="" value="" placeholder="メールアドレスを入力">
+            </div>
+            <div class="txtb">
+                <label>口座情報</label>
+                <table>
+                    <tr>
+                        <th><label>銀行名</label></th>
+                        <th><label>支店番号(名)</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" value="" placeholder="銀行名を入力"></td>
+                        <td><input type="text" name="" value="" placeholder="支店名を入力"></td>
+                    </tr>
+                    <tr>
+                        <td><label>口座番号</label></td>
+                        <td><label>名義</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" value="" placeholder="口座番号を入力"></td>
+                        <td><input type="text" name="" value="" placeholder="名義を入力"></td>
+                    </tr>
+
+                </table>
+            </div>
+
+        
+            <input type="submit" class="btn req_btn" value="確認">
+          </div>
+    </form>
+
+</body>
+</html>

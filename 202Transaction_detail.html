@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html　lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>取引詳細</title>
+        <link href="./css/style.css" rel="stylesheet" type ="text/css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="stylesheet" href="./css/table.css">
+        <script src="./script".js></script>
+    </head>
+<body>
+    <header>
+		<img class="logo" src="./img/logo.png" alt="logo">
+		<nav>
+			<ul class="navi">
+				<li class="active"><a href="2TransactionSearch.html">取引検索</a></li>
+				<li><a href="3InvoiceList.html">請求書</a></li>
+				<li><a href="4SendingMoneyList.html">振込一覧</a></li>
+				<li><a href="5Calculation.html">精算管理</a></li>
+				<li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+				<li><a href="8SellercompanyList.html">事業者管理</a></li>
+			</ul>
+		</nav>
+		<a class="logoff" href=""><button>ログオフ</button></a>
+	</header>
+
+    <div>
+        <h1>取引情報詳細</h1>
+        <button type=“button” class="btn back_btn" onclick="history.back()">戻る</button>
+        <br>
+
+        <table border="1" style="width:600px;">
+            <tr>
+                <th style="width:100px; ">支払い完了日</th>
+                <td style="width:100px; "></td>
+                <th style="width:100px; ">注文日時</th>
+                <td style="width:100px; "></td>
+                <th style="width:100px; ">支払い状況</th>
+                <td style="width:100px; "></td>
+            </tr>
+        </table>
+
+        <table border="1" style="width:900px; ">
+            <tr>
+                <th style="width:150px; ">取引番号</th>
+                <td style="width:300px; "></td>
+                <th style="width:150px; ">伝票番号</th>
+                <td style="width:300px; "></td>
+            </tr>
+            <tr>
+                <th>事業者番号</th>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <th>事業者名(ふりがな)</th>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <th>受付番号</th>
+                <td colspan="3"></td>
+            </tr>
+        </table>
+        <br>
+
+        <h2>購入者情報</h2>
+        <table border="1">
+            <tr>
+                <th style="width:25px; ">購入者名</th>
+                <td style="width:300px; "> </td>
+            </tr>
+            <tr>
+                <th>購入者名(ふりがな)</th>
+                <td> </td>
+            </tr>
+            <tr>
+                <th>電話番号</th>
+                <td> </td>
+            </tr>
+        </table>
+        <br>
+
+        <h2>支払い情報</h2>
+        <table border="1" style="width:200px;">
+            <tr>
+                <th style="width:100px; ">入金有効期限</th>
+                <td style="width:100px; "></td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+                <th style="width:150px; ">コンビニ会社</th>
+                <td style="width:300px; "></td>
+                <th style="width:150px; ">企業番号</th>
+                <td style="width:300px; "></td>
+            </tr>
+            <tr>
+                <th>支払金額(税込)</th>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <th>手数料</th>
+                <td colspan="3"></td>
+            </tr>
+        </table>
+    </body>
+    </div>
+</body>
+</html>

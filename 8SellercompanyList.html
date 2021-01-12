@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html　lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>取引詳細</title>
+        <link href="./css/style.css" rel="stylesheet" type ="text/css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="stylesheet" href="./css/table.css">
+        <script src="./script".js></script>
+    </head>
+<body>
+    <header>
+		<img class="logo" src="./img/logo.png" alt="logo">
+		<nav>
+			<ul class="navi">
+				<li><a href="2TransactionSearch.html">取引検索</a></li>
+				<li><a href="3InvoiceList.html">請求書</a></li>
+				<li><a href="4SendingMoneyList.html">振込一覧</a></li>
+				<li><a href="5Calculation.html">精算管理</a></li>
+				<li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+				<li class="active"><a href="8SellercompanyList.html">事業者管理</a></li>
+			</ul>
+		</nav>
+		<a class="logoff" href=""><button>ログオフ</button></a>
+	</header>
+	<main>
+		
+		<div id= "search_box">
+			<h2>事業者検索</h2>
+			<button type="button" class="btn change_btn" onclick="location.href='802NewSeller.html'">新規登録</button>
+			<br>
+			<br>
+			<form>
+				<div class="search_small">
+					<!---番号で検索-->
+					<div class="left">
+						<div class="select_number">
+							<select name="number">
+								<option value="transaction_number" selected>取引番号</option>
+								<option value="seller_company_number">事業者番号</option>
+								<option value="convenience">企業番号</option>
+							</select>
+						</div>
+					</div>
+					<!--ステータス-->
+						<div class="right">
+							<div class="agreement">
+								<h5>契約状況</h5>
+								<div class="condition">
+									<input type="radio" id="none" name="status" value="none" checked>
+									<label for="none">契約中</label>
+									<input type="radio" id="done" name="status" value="done">
+									<label for="done">契約満了</label>
+								</div>
+							</div>
+						</div><!--right end-->
+				</div><!--search_small end-->
+				<input class="input_txt" type="text">
+				<button type="submit" class="btn req_btn">検索</button>
+			</form>
+		</div><!--serach_box end-->
+	</main>
+</body>
+</html>

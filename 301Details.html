@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html　lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/sheet.css">
+    <link rel="stylesheet" href="./css/nav.css">.
+    <link rel="stylesheet" href="./css/style.css">
+    <title>御請求書</title>
+</head>
+<body>
+    <header>
+		<img class="logo" src="./img/logo.png" alt="logo">
+		<nav>
+			<ul class="navi">
+				<li class="active"><a href="2TransactionSearch.html">取引検索</a></li>
+				<li><a href="3InvoiceList.html">請求書</a></li>
+				<li><a href="4SendingMoneyList.html">振込一覧</a></li>
+				<li><a href="5Calculation.html">精算管理</a></li>
+				<li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+				<li><a href="8SellercompanyList.html">事業者管理</a></li>
+			</ul>
+		</nav>
+		<a class="logoff" href=""><button>ログオフ</button></a>
+	</header>
+    <div class="buttons">
+        <button type=“button” class="btn back_btn" onclick="history.back()">戻る</button>
+		<button type="button" class="btn change_btn" onclick="location.href='302WriteInvoice.html'">変更</button>
+        <button type="button" class="btn del_btn" onclick="location.href='3InvoiceList.html'">削除</button>
+        <button type="button" class="btn req_btn" onclick="location.href='303SendMail.html'">メール送信</button>
+        
+    </div>
+    <section class="sheet">
+        <div class="row_1">
+            <h1 class="text-center">請求書</h1>
+        </div>
+        <div class="row_2">
+            <ul class="text-right">
+                <li>No 00000000</li>
+                <li>2020年12月20日</li>
+            </ul>
+        </div>
+        <div class="row_3">
+            <div class="col_1">
+                <ul>
+                    <li>
+                        <h2 class="customer_name">〇〇〇〇〇株式会社 御中</h2>
+                    </li>
+                    <li>
+                        <h2 class="request_name">件名：12月分請求</h2>
+                    </li>
+                    <li>〒000-0000</li>
+                    <li>東京都千代田区〇〇〇〇〇〇</li>
+                </ul>
+            </div>
+            <div class="col_2">
+                <ul >
+                    <li>
+                        <h2>〇〇〇〇〇株式会社</h2>
+                    </li>
+                    
+                    <li>〒000-0000</li>
+                    <li>東京都千代田区〇〇〇〇〇〇</li>
+                    <li>〇〇〇〇ビル〇Ｆ</li>
+                    <li>TEL: 00-0000-0000</li>
+                    <li>FAX: 00-0000-0000</li>
+                </ul>
+                
+            </div>
+            <div class="clear-element"></div>
+        </div>
+
+        <div class="row_4">
+            <div class="col_1">
+                <p>下記のとおりご請求申し上げます。</p>
+
+                <table class="summary">
+                    <tbody>
+                        <tr>
+                            <th>合計金額</th>
+                            <td>\2,168,640</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col_2">
+                <p class="pay-deadline">お支払期限：2020年12月20日</p>
+            </div>
+            
+        </div>
+
+        <div class="row_5">
+            <table class="detail">
+                <thead>
+                    <tr>
+                        <th class="number">No.</th>
+                        <th class="trade_code">取引番号</th>
+                        <th class="com_name">事業者名</th>
+                        <th class="pay_shop">支払店舗</th>
+                        <th class="pay_date">取引日時</th>
+                        <th class="commision">手数料</th>
+                        <th class="subtotal">金額</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="dataline">
+                        <td class="text-left">1</td>
+                        <td>0000001</td>
+                        <td>sony</td>
+                        <td>渋谷店</td>
+                        <td>2020/12/20</td>
+                        <td>300</td>
+                        <td>10000</td>
+                    </tr>
+                    <tr class="dataline">
+                        <td class="text-left">2</td>
+                        <td>0000002</td>
+                        <td>サントリー</td>
+                        <td>新宿店</td>
+                        <td>2020/12/20</td>
+                        <td>300</td>
+                        <td>5000</td>
+                    </tr>
+                    <tr class="dataline">
+                        <td class="text-left">3</td>
+                        <td>0000003</td>
+                        <td>zoff</td>
+                        <td>京橋店</td>
+                        <td>2020/12/20</td>
+                        <td>300</td>
+                        <td>8000</td>
+                    </tr>
+                    <tr class="dataline">
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr class="dataline">
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr class="dataline">
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr class="dataline">
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr class="dataline">
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr class="dataline">
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr class="dataline">
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr class="dataline">
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="space dendulum" rowspan="3" colspan="5">
+                            <ul>
+                                <li>振込先</li>
+                                <li>名義：カ）カキクケショウジ</li>
+                                <li>〇〇銀行 〇〇支店 普通 00000000</li>
+                            </ul>
+                            <p>※お振込み手数料は御社ご負担にてお願い致します。</p>
+                        </td>
+                        <th> 小計 </th>
+                        <td> 2,008,000 </td>
+                    </tr>
+                    <tr>
+                        <th> 手数料 </th>
+                        <td> 160,640 </td>
+                    </tr>
+                    <tr>
+                        <th> 合計 </th>
+                        <td> 2,168,640 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+
+        <div class="row_6">
+            <table class="check">
+                <tbody>
+                    <tr>
+                        <th>備考</th>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+</body>
+
+</html>

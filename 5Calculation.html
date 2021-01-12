@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>精算管理</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/nav.css">
+	<link rel="stylesheet" href="./css/table.css">
+	<script src="./script".js></script>
+</head>
+<body>
+	<header>
+		<img class="logo" src="./img/logo.png" alt="logo" width="150px">
+		<nav>
+			<ul class="navi">
+				<li><a href="2TransactionSearch.html">取引検索</a></li>
+				<li><a href="3InvoiceList.html">請求書</a></li>
+				<li><a href="4SendingMoneyList.html">振込一覧</a></li>
+				<li class="active"><a href="5Calculation.html">精算管理</a></li>
+				<li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+				<li><a href="8SellercompanyList.html">事業者管理</a></li>
+			</ul>
+		</nav>
+		<a class="logoff" href=""><button>ログオフ</button></a>
+	</header>
+	<main>
+		<h1 style="text-align: center;">精算管理</h1>
+		<div class="select_box">
+			<div class="convenience content-box">
+				<h1>企業</h1>
+				<button onclick="location.href='501CalculationList_convenience.html'" class="btn convenience-btn">請求書作成</button> 
+			</div>
+			<div class="seller_company content-box">
+				<h1>事業者</h1>
+				<button onclick="location.href='601CalculationListSeller.html'" class="btn seller-btn">精算</button> 
+			</div>
+		</div>
+	</main>
+</body>
+</html>

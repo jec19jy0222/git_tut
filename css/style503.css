@@ -1,0 +1,156 @@
+
+
+/*************ここまでheader*****************/
+
+/*画面レイアウト*/
+
+  .main503 {
+      width: 900px;
+      margin:50px auto;
+  }
+
+  
+
+  .main503 h2 {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-size: 32px;
+  }
+
+  .main503 p {
+    margin: 20px 0px;
+  }
+
+  .step-heading {
+    padding: 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eeecec;
+  }
+
+   .step-content {
+       padding: 20px 0px 20px 20px;
+   }
+
+   .step-content h4 {
+       margin: 10px 0px;
+       font-size: 20px;
+   }
+  
+
+  /* テーブル共通 */
+  table,
+  th,
+  td {
+    border: 1px black solid;
+    border-collapse: collapse;
+    padding: 5px 5px;
+  }
+  
+  table th {
+    background: #36304a;
+    font-weight: bold;
+    color: white;
+  }
+  table td {
+    text-align: center;
+  }
+  
+  /* テーブル 総額欄 */
+  table {
+    width: 900px; 
+    margin:10px auto;
+  }
+  
+  
+  /* テーブル 明細欄 */
+  table.detail tr {
+    height: 30px;
+  }
+  table.detail th.col-cbox503 {
+    width: 10%;
+  }
+  table.detail th.col-com-name503 {
+    width: 35%;
+  }
+  table.detail th.col-date503 {
+    width: 30%;
+  }
+
+  table.detail th.col-totalamount503 {
+    width: 25%;
+  }
+
+  /*S3テーブル*/
+  table.detail th.col-com-name503-3 {
+    width: 18%;
+  }
+
+  table.detail th.col-sub-name503-3 {
+    width: 18%;
+  }
+
+  table.detail th.col-req-date503-3 {
+    width: 18%;
+  }
+
+  table.detail th.col-deadline503-3 {
+    width: 18%;
+  }
+
+  table.detail th.col-remark503-3 {
+    width: 28%;
+  }
+  
+
+  table.detail tr.dataline:nth-child(odd) td {
+    background-color: #ffffff;
+  }
+  table.detail tr.dataline:nth-child(even) td {
+    background-color: #eeecec;
+  }
+
+  /*ボタン*/
+.btn_content {
+    width: 100%;
+    text-align: center;
+}
+
+
+  .btn {
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 3px 20px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    transition: .25s;
+    border-radius: 5px;
+    border: 2px solid transparent;
+  }
+
+  .next-btn {
+    margin-left: 10px;
+    background-color:#00e290;
+  }
+
+  .next-btn:focus,
+  .next-btn:hover {
+    background-color:#fff;
+    border-color: currentColor;
+    color:#00e290;
+    
+  }
+
+  .back_btn {
+    margin-right: 10px;
+    background-color: gray;
+    margin-right: 10px;
+  }
+
+  .back_btn:focus,
+  .back_btn:hover {
+    background-color: #ffffff;
+    border-color: currentColor;
+    color: gray;
+  }

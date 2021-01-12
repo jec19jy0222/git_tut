@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html　lang="ja">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="stylesheet" href="./css/table.css">
+        <title>御請求書</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <nav>
+                <ul class="navi">
+                    <li><a href="2TransactionSearch.html">取引検索</a></li>
+                    <li><a href="3InvoiceList.html">請求書</a></li>
+                    <li><a href="4SendingMoneyList.html">振込一覧</a></li>
+                    <li class="active"><a href="5Calculation.html">精算管理</a></li>
+                    <li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+                    <li><a href="8SellercompanyList.html">事業者管理</a></li>
+                </ul>
+            </nav>
+            <a class="logoff" href=""><button>ログオフ</button></a>
+        </header>
+        <div class="table">
+            <h2>精算画面<span>(企業)</span></h2>
+            <form action="./503BundleWriting.html">
+                <div class="btn_content">
+                    <input type="submit" class="btn req_btn" value="請求書一括作成">
+                </div>
+
+                <table class="detail">
+                    <thead>
+                        <tr>
+                            <th class="req_name"><input type="checkbox" name="trade_data"></th>
+                            <th class="com_code">企業番号</th>
+                            <th class="com_name">会社名</th>
+                            <th class="req_totalamount">請求総額(税込)</th>
+                            <th class="trade_detail_btn"> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="dataline">
+                            <td><input type="checkbox" name="trade_data"></td>
+                            <td>123456</td>
+                            <td>ローソン株式会社</td>
+                            <td>100,000</td>
+                            <td><a href="502Detail.html" class="trade_detail">詳細</a></td>
+                        </tr>
+                        <tr class="dataline">
+                            <td><input type="checkbox" name="trade_data"></td>
+                            <td>544545</td>
+                            <td>セブン株式会社</td>
+                            <td>100,000</td>
+                            <td><a href="#" class="trade_detail">詳細</a></td>
+                        </tr>
+                        <tr class="dataline">
+                            <td><input type="checkbox" name="trade_data"></td>
+                            <td>454556</td>
+                            <td>株式会社ファミリーマート</td>
+                            <td>126,000</td>
+                            <td><a href="#" class="trade_detail">詳細</a></td>
+                        </tr>
+                        <tr class="dataline">
+                            <td><input type="checkbox" name="trade_data"></td>
+                            <td>545455</td>
+                            <td>ミニストップ</td>
+                            <td>24,000</td>
+                            <td><a href="#" class="trade_detail">詳細</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            </form>
+        </div>
+    </body>
+    </html>

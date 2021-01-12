@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>振込一覧</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/nav.css">
+	<link rel="stylesheet" href="./css/table.css">
+	<script src="./script".js></script>
+</head>
+<body>
+	<header>
+		<img class="logo" src="./img/logo.png" alt="logo" width="150px">
+		<nav>
+			<ul class="navi">
+				<li><a href="2TransactionSearch.html">取引検索</a></li>
+				<li><a href="3InvoiceList.html">請求書</a></li>
+				<li class="active" ><a href="4SendingMoneyList.html">振込一覧</a></li>
+				<li><a href="5Calculation.html">精算管理</a></li>
+				<li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+				<li><a href="8SellercompanyList.html">事業者管理</a></li>
+			</ul>
+		</nav>
+		<a class="logoff" href=""><button>ログオフ</button></a>
+	</header>
+	<main>
+		<h1>振込一覧</h1>
+		<div id= "search_box">
+			<form>
+				<div class="search">
+				<!--取引日時-->
+					<div class="left">
+						<div class="date">
+							<h5>取引日時</h5>
+							<div class="condition">
+								<input type="date" id="start" name="date_start">
+								<input type="date" id="end" name="date_end">
+							</div>
+						</div><!--date end-->
+					</div><!--right end-->
+				</div><!--search end-->
+				<!---番号で検索-->
+				<select name="number" id ="number">
+					<option value="transaction_number" selected>取引番号</option>
+					<option value="seller_company_number">事業者番号</option>
+					<option value="convenience">企業番号</option>
+				</select>
+				<input class="input_txt" type="text">
+				<button type="submit" class="btn req_btn">検索</button>
+			</form>
+		</div><!--serach_box end-->
+		<input type="button" class="btn req_btn" value="メール送信" onclick=""> 
+		<table border="1">　
+        <tr>
+			<th><input type="checkbox" name="selected_all"></th>
+            <th>事業者番号</th>
+            <th>事業者名</th>
+            <th>対象期限</th>
+            <th>振込総額(税込）</th>
+			<th>振込状況</th>
+			<th></th>
+        </tr>
+        <tr>
+			<td><input type="checkbox" name="_selected_" value="ROW_1"></td>
+            <td>123456789</td>
+            <td>kamazon</td>
+            <td>2020年12月</td>
+            <td>36万円</td>
+			<td>36万円</td>
+			<td><a class="detail" href="401Detail.html">明細</a></td>
+        </tr>
+        <tr>
+			<td><input type="checkbox" name="_selected_" value="ROW_2"></td>
+            <td>234567891</td>
+            <td>rakutem</td>
+            <td>2020年12月</td>
+            <td>48万円</td>
+			<td>48万円</td>
+			<td><a class="detail" href="2TransactionSearch.html">明細</a></td>
+        </tr>
+        <tr>
+			<td><input type="checkbox" name="_selected_" value="ROW_3"></td>
+            <td>345678910</td>
+            <td>メル狩り</td>
+            <td>2020年12月</td>
+            <td>1万円</td>
+			<td>1万円</td>
+			<td><a class="detail" href="2TransactionSearch.html">明細</a></td>
+        </tr>
+        <tr>
+			<td><input type="checkbox" name="_selected_" value="ROW_4"></td>
+            <td>567894561</td>
+            <td>bigcamera</td>
+            <td>2020年12月</td>
+            <td>1円</td>
+			<td>1円</td>
+			<td><a class="detail" href="2TransactionSearch.html">明細</a></td>
+        </tr>    
+    </table>
+	</main>
+</body>
+</html>

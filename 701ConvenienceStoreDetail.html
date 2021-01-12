@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html　lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>取引詳細</title>
+        <link href="./css/style.css" rel="stylesheet" type ="text/css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="stylesheet" href="./css/table.css">
+        <script src="./script".js></script>
+    </head>
+<body>
+    <header>
+		<img class="logo" src="./img/logo.png" alt="logo">
+		<nav>
+			<ul class="navi">
+				<li><a href="2TransactionSearch.html">取引検索</a></li>
+				<li><a href="3InvoiceList.html">請求書</a></li>
+				<li><a href="4SendingMoneyList.html">振込一覧</a></li>
+				<li><a href="5Calculation.html">精算管理</a></li>
+				<li class="active"><a href="7ConvenienceStoreList.html">企業管理</a></li>
+				<li><a href="8SellercompanyList.html">事業者管理</a></li>
+			</ul>
+		</nav>
+		<a class="logoff" href=""><button>ログオフ</button></a>
+	</header>
+	<main>
+		<h2>企業情報詳細</h2>
+		<button type=“button” class="btn back_btn" onclick="history.back()">戻る</button>
+		<button type="button" class="btn change_btn" onclick="history.back">変更</button>
+        <button type="button" class="btn del_btn" onclick="history.back">削除</button>
+        </br>
+        <br>
+		<a href="2TransactionSearch.html" class="trade_detail">取引履歴</a>
+		<a href="3InvoiceList.html" class="trade_detail">請求履歴</a>
+		<table border="1" style="width:600px;">
+            <tr>
+                <th style="width:100px; ">契約状況</th>
+                <td style="width:100px; "></td>
+                <th style="width:100px; ">契約満了日</th>
+                <td style="width:100px; "></td>
+            </tr>
+        </table>
+
+        <table border="1" style="width:900px; ">
+			<tr>
+                <th style="width:140px;">企業番号</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>企業名</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>企業名(ふりがな)</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>住所</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>電話番号</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>メールアドレス</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>担当者</th>
+                <td></td>
+            </tr>
+        </table>
+        <br>
+	</main>
+</body>
+</html>

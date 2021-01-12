@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html　lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>取引詳細</title>
+        <link href="./css/style.css" rel="stylesheet" type ="text/css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="stylesheet" href="./css/style503.css">
+        <link rel="stylesheet" href="./css/table.css">
+        <script src="./script".js></script>
+    </head>
+<body>
+    <header>
+		<img class="logo" src="./img/logo.png" alt="logo">
+		<nav>
+			<ul class="navi">
+				<li><a href="2TransactionSearch.html">取引検索</a></li>
+				<li><a href="3InvoiceList.html">請求書</a></li>
+				<li><a href="4SendingMoneyList.html">振込一覧</a></li>
+				<li><a href="5Calculation.html">精算管理</a></li>
+				<li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+				<li class="active"><a href="8SellercompanyList.html">事業者管理</a></li>
+			</ul>
+		</nav>
+		<a class="logoff" href=""><button>ログオフ</button></a>
+	</header>
+    <div class="main503">
+        <h2>請求書一括作成</h2>
+        
+        <div class="contents-box">
+            <div class="step-box">
+                <div class="step-heading">
+                    <h3>STEP1 対象期間の設定</h3>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-heading">
+                    <h3>STEP2 取引先の選択</h3>
+                </div>
+
+            <div class="step-box">
+                <div class="step-heading">
+                    <h3>STEP3 請求書の詳細設定</h3>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-heading">
+                    <h3>STEP4 確認</h3>
+                </div>
+
+                <div class="step-content">
+                    <form>
+                        <p>
+                            以上の内容で請求書を作成します。
+                        </p>
+
+                        <table class="detail">
+                            <thead>
+                                <tr>
+                                    <th class="col-com-name503-3">企業名</th>
+                                    <th class="col-sub-name503-3">件名</th>
+                                    <th class="col-req-date503-3">請求日</th>
+                                    <th class="col-deadline503-3">支払い期限</th>
+                                    <th class="col-remark503-3">備考</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="dataline">
+                                    <td>Apple</td>
+                                    <td>12月請求</td>
+                                    <td><input type="date"></td>
+                                    <td><input type="date"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+
+                                <tr class="dataline">
+                                    <td>dsffd</td>
+                                    <td>12月請求</td>
+                                    <td><input type="date"></td>
+                                    <td><input type="date"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+
+                                <tr class="dataline">
+                                    <td>gfghhhg</td>
+                                    <td>12月請求</td>
+                                    <td><input type="date"></td>
+                                    <td><input type="date"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+
+
+                                <tr class="dataline">
+                                    <td>huuhuh</td>
+                                    <td>12月請求</td>
+                                    <td><input type="date"></td>
+                                    <td><input type="date"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="btn_content">
+                            <p></p>
+                            
+                            <input type="button" class="btn back_btn" onclick="history.back()" value="戻る">
+                            <input type="button" class="btn next-btn" onclick="location.href='504BundleComplete.html'" value="請求書を作成します">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

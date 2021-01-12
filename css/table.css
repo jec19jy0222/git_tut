@@ -1,0 +1,65 @@
+.table h2 {
+    font-size: 32px;
+}
+
+/*汎用*/
+ span {
+     font-size: 14px;
+ }
+
+
+/* テーブル共通 */
+table,
+th,
+td {
+  border: 1px black solid;
+  border-collapse: collapse;
+  padding: 5px 5px;
+}
+
+table th {
+  background: #36304a;
+  font-weight: bold;
+  color: white;
+}
+table td {
+  text-align: center;
+}
+
+/* テーブル 総額欄 */
+table {
+  width: 100%; 
+  margin-top: 20px;
+}
+
+
+/* テーブル 明細欄 */
+table.detail_303 tr {
+  height: 30px;
+}
+table.detail th.req_name {
+  width: 5%;
+}
+table.detail th.com_code {
+  width: 25%;
+}
+table.detail th.com_name {
+  width: 30%;
+}
+
+table.detail th.req_totalamount {
+  width: 30%;
+}
+
+table.detail th.trade_detail_btn {
+  width: 10%;
+}
+
+
+table.detail tr.dataline:nth-child(odd) td {
+  background-color: #ffffff;
+}
+table.detail tr.dataline:nth-child(even) td {
+  background-color: #eeecec;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html　lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>取引詳細</title>
+        <link href="./css/style.css" rel="stylesheet" type ="text/css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="stylesheet" href="./css/style503.css">
+        <link rel="stylesheet" href="./css/table.css">
+        <script src="./script".js></script>
+    </head>
+<body>
+    <header>
+		<img class="logo" src="./img/logo.png" alt="logo">
+		<nav>
+			<ul class="navi">
+				<li><a href="2TransactionSearch.html">取引検索</a></li>
+				<li><a href="3InvoiceList.html">請求書</a></li>
+				<li><a href="4SendingMoneyList.html">振込一覧</a></li>
+				<li><a href="5Calculation.html">精算管理</a></li>
+				<li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+				<li class="active"><a href="8SellercompanyList.html">事業者管理</a></li>
+			</ul>
+		</nav>
+		<a class="logoff" href=""><button>ログオフ</button></a>
+	</header>
+    <div class="main503">
+        <h2>請求書一括作成</h2>
+        
+        <div class="contents-box">
+            <div class="step-box">
+                <div class="step-heading">
+                    <h3>STEP1 対象期間の設定</h3>
+                </div>
+                <div class="step-content">
+                    <form action="./503BundleWritingS2.html">
+                        <p>
+                            作成する請求書の対象期間を設定します。
+                            以下から、期間を指定してください。
+                        </p>
+                        <h4>対象期間</h4>
+                        <input type="date" name="req-date-start" class="req-date">
+                        <input type="date" name="req-date-end" class="req-date">
+                        <input type="submit"  value="確定して次へ" class="btn next-btn">
+                    </form>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-heading">
+                    <h3>STEP2 取引先の選択</h3>
+                </div>
+                
+            </div>
+
+            <div class="step-box">
+                <div class="step-heading">
+                    <h3>STEP3 請求書の詳細設定</h3>
+                </div>
+                
+            </div>
+
+            <div class="step-box">
+                <div class="step-heading">
+                    <h3>STEP4 確認</h3>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

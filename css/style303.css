@@ -1,0 +1,164 @@
+/* 要素の初期化 */
+* {
+    /* マージン・パディングをリセットした方がデザインしやすい */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+  /* Style the top navigation bar */
+nav {
+  overflow: hidden;
+}
+
+/* Style the topnav links */
+nav a {
+  float: left;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.navi a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 25px; 
+}
+/* Change color on hover */
+.navi a:hover {
+  background-color: #E6E6E6;
+  color: white;
+}
+.navi a:active {
+  background-color: #10D68E;
+  color: white;
+}
+
+/*************ここまでheader*****************/
+
+  .main303 {
+      width: 900px;
+      margin:50px auto;
+  }
+
+  .main303 h2 {
+    font-size: 32px;
+  }
+
+  .main304 {
+      height: 250px;
+      width: 500px;
+      margin:100px auto;
+      padding: 50px 50px;
+      background-color: #f3f2f2;
+      text-align: center;
+  }
+
+  .main304 h2 {
+      margin-top: 30px;
+      margin-bottom: 65px;
+  }
+  
+
+  /* テーブル共通 */
+  table,
+  th,
+  td {
+    border: 1px black solid;
+    border-collapse: collapse;
+    padding: 5px 5px;
+  }
+  
+  table th {
+    background: #36304a;
+    font-weight: bold;
+    color: white;
+  }
+  table td {
+    text-align: center;
+  }
+  
+  /* テーブル 総額欄 */
+  table {
+    width: 700px; 
+    margin:30px auto;
+  }
+  
+  
+  /* テーブル 明細欄 */
+  table.detail tr {
+    height: 30px;
+  }
+  table.detail th.req_name {
+    width: 40%;
+  }
+  table.detail th.mail_txt {
+    width: 40%;
+  }
+  table.detail th.mail_status {
+    width: 20%;
+  }
+  
+
+  table.detail tr.dataline:nth-child(odd) td {
+    background-color: #ffffff;
+  }
+  table.detail tr.dataline:nth-child(even) td {
+    background-color: #eeecec;
+  }
+
+  /*ボタン*/
+.btn_content {
+    width: 20%;
+    margin: 0 auto;
+}
+
+
+  .btn {
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 3px 20px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    transition: .25s;
+    border-radius: 5px;
+    border: 2px solid transparent;
+  }
+
+  .back_btn {
+    background-color: gray;
+    margin-right: 10px;
+  }
+
+  .back_btn:focus,
+  .back_btn:hover {
+    background-color: #ffffff;
+    border-color: currentColor;
+    color: gray;
+  }
+
+  .mail_btn {
+    background-color: rgb(124, 206, 124);
+  }
+
+  .mail_btn:focus,
+  .mail_btn:hover {
+    background-color: #ffffff;
+    border-color: currentColor;
+    color:rgb(124, 206, 124);
+  }
+
+  .reqtxt_back {
+    width: 180px; 
+    margin: 20px auto;
+    background-color: rgb(124, 206, 124);
+  }
+
+  .reqtxt_back:focus,
+  .reqtxt_back:hover {
+    background-color:#f3f2f2;
+    border-color: currentColor;
+    color:rgb(124, 206, 124);
+  }

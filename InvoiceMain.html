@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>請求書一覧</title>
+	<link href="style.css" rel="stylesheet" type ="text/css">
+	<script src="./script".js></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<a><img src="./img/logo.png" alt="logo" width="150px"></a>
+			<div class="navi">
+				<a href="" class="active">取引検索</a>
+				<a href="">請求書</a>
+				<a href="">振込一覧</a>
+				<a href="">精算管理</a>
+				<a href="">企業管理</a>
+				<a href="">事業者</a>
+				<a href="">ログオフ</a>
+			</div>
+		</nav>
+	<header>
+	<main>
+		<h1>取引検索</h1>
+		<div id= "search_box">
+			<h3>条件検索</h3>
+			<form>
+			<!---番号で検索-->
+				<select name="number" id ="number">
+					<option value="transaction_number" selected>取引番号</option>
+					<option value="seller_company_number">事業者番号</option>
+					<option value="convenience">企業番号</option>
+				</select>
+				<input type="text">
+				<hr>
+			<!--ステータス-->
+				<div class="title">ステータス</div>
+				<div class="condtion">
+					<input type="radio" id="none" name="status" value="none" checked>
+					<label for="none">なし</label>
+					<input type="radio" id="done" name="status" value="done">
+					<label for="done">入金済み</label>
+					<input type="radio" id="waiting" name="status" value="waiting">
+					<label for="waiting">入金待ち</label>
+					<input type="radio" id="cancel" name="status" value="cancel">
+					<label for="cancel">キャンセル</label>
+				</div>
+				<hr>
+			<!--取引日時-->
+				<div class="title">取引日時</div>
+				<div class="condtion"></div>
+					<input type="date" id="start" name="date_start">
+					<input type="date" id="end" name="date_end">
+				</div>
+				<button type="submit">検索</button>
+			</form>
+		</div>
+	</main>
+</body>
+</html>

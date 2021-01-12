@@ -1,0 +1,318 @@
+html {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+   margin: 0;
+   padding: 20px 20px;
+}
+
+
+
+/*************検索BOX_start*****************/
+/*gray box*/
+#search_box{
+  width:1000px;
+  background-color: #FAFAFA;
+  padding: 40px 40px;
+}
+.complete_box{
+	width:600px;
+	background-color: rgb(231, 233, 235);
+	text-align: center;
+	margin: auto;
+	padding: 30px 30px;
+	border-radius: 20px;
+}
+
+.search{
+	width: 80%;
+	height: 120px;
+}
+
+.search .left{
+	width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.search .right{
+	width: 50%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.search_small{
+	width: 50%;
+	height: 50px;
+}
+
+.search_small .left{
+	width: 50%;
+    float: left;
+ 	box-sizing: border-box;}
+
+.search_small .right{
+	width: 50%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.search_small .right .agreement{
+	display: flex;
+	padding: 5px 0px 10px 0px;
+}
+
+.agreement h5{
+	margin: 0;
+	padding-right: 20px;
+	
+}
+
+/********select_number*********/
+.select_number{
+	float: left;
+	border: 1px solid #bfc3c4;
+    width: 150px;
+	border-radius: border-box;
+    border-radius: 3px;
+    overflow: hidden;
+	position: relative;
+	margin-right: 10px;
+	background-color: white;
+}
+
+.select_number, .select_number select{
+	width: 150px;
+}
+
+.select_number select{
+	height: 30px;
+	padding: 5px 10px;
+	background: transparent;
+	border: none;
+}
+
+.select_number select:focus {
+    outline: none;
+}
+
+.input_txt{
+	border: 1px solid #bfc3c4;
+    width: 350px;
+	height: 28px;
+}
+
+/****検索button****/
+.submit{
+	
+}
+
+/*************検索BOX_end*****************/
+
+/*************table_start*****************/
+/*************table_end*****************/
+
+/*************select_box_start(5Calculation)*****************/
+.select_box{
+	width: 100%;
+	height: 300px;
+	margin: 50px auto;
+	color: black;
+}
+
+.content-box{
+	height: 100%;
+	width: 49%;
+	padding: 0 auto;
+
+	display: inline-block;
+	text-align: center;
+}
+
+.convenience{
+	background-color: #FAFAFA;
+	flex: left;
+}
+
+.seller_company {
+	background-color: #00e290;
+	color: white;
+	flex-direction: column-reverse;
+}
+
+.content-box h1 {
+	margin: 30px auto;
+	margin-top: 90px;
+}
+
+.select_box .btn {
+	
+	padding: 5px 20px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	color:#ffffff;
+}
+
+
+.select_box .convenience-btn{
+	
+	background-color: #00e290;
+	
+	
+	
+}
+
+.select_box .seller-btn{
+	background-color: #61615f;
+}
+
+
+.btn:hover{
+	opacity: 0.8;
+}
+
+/*************select_box_end*****************/
+
+/*************戻るbutton**************/
+.back_btn {
+    margin-right: 10px;
+    background-color: gray;
+    margin-right: 10px;
+  }
+
+  .back_btn:focus,
+  .back_btn:hover {
+    background-color: #ffffff;
+    border-color: currentColor;
+    color: gray;
+  }
+  /*ボタン*/
+.btn_content {
+	text-align: right;
+	margin-top: 10px;
+	margin-right: auto;
+  }
+  
+  
+  .btn {
+	font-size: 1.125rem;
+	text-decoration: none;
+	padding: 3px 20px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	transition: .25s;
+	border-radius: 5px;
+	border: 2px solid transparent;
+  }
+  
+  .req_btn {
+	background-color: #00e290;
+  }
+  .del_btn{
+	  background-color: red;
+  }
+  .del_btn:focus,
+  .del_btn:hover {
+	background-color:#fff;
+	border-color: currentColor;
+	color:red;
+  }
+  .change_btn{
+	  background-color: blue;
+  }
+  .change_btn:focus,
+  .change_btn:hover {
+	background-color:#fff;
+	border-color: currentColor;
+	color:blue;
+  }
+  
+  .req_btn:focus,
+  .req_btn:hover {
+	background-color:#fff;
+	border-color: currentColor;
+	color:#00e290;
+  }
+  .next-btn {
+    margin-left: 10px;
+    background-color: #00e290;
+  }
+
+  .next-btn:focus,
+  .next-btn:hover {
+    background-color:#fff;
+    border-color: currentColor;
+    color:#00e290;
+    
+  }
+  /*詳細ボタン*/
+  .trade_detail {
+	text-decoration: none;
+	color: #00e290;
+  }
+  
+  .trade_detail:hover {
+	color: rgb(228, 81, 93);
+  }
+  .buttons{
+	margin-left: 10px;
+  }
+/*form*/
+.reg-form{
+	width: 85%;
+	max-width: 600px;
+	background: #f1f1f1;
+	position: relative;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,0%);
+	padding: 30px 40px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 0 5px #000000b3;
+	font-family: "Montserrat",sans-serif;
+  }
+  .reg-form h1{
+	margin-top: 0;
+	font-weight: 200;
+  }
+  .txtb{
+	border:1px solid #10D68E;
+	margin: 8px 0;
+	padding: 12px 18px;
+  }
+  .txtb table{
+	margin: 8px 0;
+	padding: 12px 18px;
+  }
+  .txtb label{
+	display: block;
+	text-align: left;
+	color:  #10D68E;
+	text-transform: uppercase;
+	font-size: 14px;
+  }
+  .txtb input,.txtb textarea{
+	width: 100%;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 18px;
+	margin-top: 6px;
+  }
+  .reg-form .btn{
+	display: inline-block;
+	padding: 14px 0;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-top: 8px;
+	width: 100%;
+  }
+  

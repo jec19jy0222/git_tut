@@ -1,0 +1,89 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/nav.css">
+	<link rel="stylesheet" href="./css/table.css">
+    <title>御請求書</title>
+</head>
+<html>
+<body>
+    <header>
+		<img class="logo" src="./img/logo.png" alt="logo" width="150px">
+		<nav>
+			<ul class="navi">
+				<li><a href="2TransactionSearch.html">取引検索</a></li>
+				<li><a href="3InvoiceList.html">請求書</a></li>
+				<li><a href="4SendingMoneyList.html">振込一覧</a></li>
+				<li class="active"><a href="5Calculation.html">精算管理</a></li>
+				<li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+				<li><a href="8SellercompanyList.html">事業者管理</a></li>
+			</ul>
+		</nav>
+		<a class="logoff" href=""><button>ログオフ</button></a>
+	</header>
+    <div class="main502">
+        <h2>ローソン株式会社</h2>
+        <form>
+            <div class="btn_content">
+                <a class="btn back_btn" href="#">戻る</a>
+                <input type="button" onclick="location.href='302WriteInvoice.html'" class="btn req_btn" value="請求書作成">
+            </div>
+
+            <table class="detail">
+                <thead>
+                    <tr>
+                        <th class="number">No.</th>
+                        <th class="trade_code">取引番号</th>
+                        <th class="sail_name">事業者名</th>
+                        <th class="slip_name">伝票番号</th>
+                        <th class="order_date">注文日時</th>
+                        <th class="fee">手数料</th>
+                        <th class="pay_amount">支払金額</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="dataline">
+                        <td>1</td>
+                        <td>123456</td>
+                        <td>Apple</td>
+                        <td>100001</td>
+                        <td>2020/12/20</td>
+                        <td>300</td>
+                        <td>120,000</td>
+                    </tr>
+                    <tr class="dataline">
+                        <td>2</td>
+                        <td>122661</td>
+                        <td>elecom</td>
+                        <td>100002</td>
+                        <td>2020/12/20</td>
+                        <td>300</td>
+                        <td>90,000</td>
+                    </tr>
+                    <tr class="dataline">
+                        <td>3</td>
+                        <td>155555</td>
+                        <td>logicool</td>
+                        <td>100003</td>
+                        <td>2020/12/20</td>
+                        <td>300</td>
+                        <td>9,800</td>
+                    </tr>
+                    <tr class="dataline">
+                        <td>4</td>
+                        <td>124545</td>
+                        <td>casio</td>
+                        <td>100004</td>
+                        <td>2020/12/20</td>
+                        <td>300</td>
+                        <td>260,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        </form>
+    </div>
+</body>
+</html>

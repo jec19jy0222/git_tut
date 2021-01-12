@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html　lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>取引詳細</title>
+        <link href="./css/style.css" rel="stylesheet" type ="text/css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="stylesheet" href="./css/table.css">
+        <script src="./script".js></script>
+    </head>
+<body>
+    <header>
+		<img class="logo" src="./img/logo.png" alt="logo">
+		<nav>
+			<ul class="navi">
+				<li><a href="2TransactionSearch.html">取引検索</a></li>
+				<li><a href="3InvoiceList.html">請求書</a></li>
+				<li><a href="4SendingMoneyList.html">振込一覧</a></li>
+				<li class="active"><a href="5Calculation.html">精算管理</a></li>
+				<li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+				<li><a href="8SellercompanyList.html">事業者管理</a></li>
+			</ul>
+		</nav>
+		<a class="logoff" href=""><button>ログオフ</button></a>
+	</header>
+        <div class="send-money-list">
+            <h3>12月分の振り込みリスト</h3>
+            <table class="send-money-table" border="2">　
+                <tr>
+                    <th>事業者番号</th>
+                    <th>事業者名</th>
+                    <th>対象期間</th>
+                    <th>振込総額(税込)</th>
+                </tr>
+                <tr>
+                    <td>123456789</td>
+                    <td>kamazon</td>
+                    <td>2020年12月</td>
+                    <td>36万円</td>
+                </tr>
+                <tr>
+                    <td>234567891</td>
+                    <td>rakutem</td>
+                    <td>2020年12月</td>
+                    <td>48万円</td>
+                </tr>
+                <tr>
+                    <td>345678910</td>
+                    <td>メル狩り</td>
+                    <td>2020年12月</td>
+                    <td>1万円</td>
+                </tr>
+                <tr>
+                    <td>567894561</td>
+                    <td>bigcamera</td>
+                    <td>2020年12月</td>
+                    <td>1円</td>
+                </tr>    
+            </table>
+        </br>
+            <input type="button"  class="btn req_btn" value="メール送信" onclick="location.href='./603SendingMoneyComplete.html'"> <input type="button" class="btn back_btn" value="戻る" onclick="history.back()">
+        </div>
+    
+</body>
+</html>

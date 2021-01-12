@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html　lang="ja">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="stylesheet" href="./css/table.css">
+        <title>取引一覧事業者</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <nav>
+                <ul class="navi">
+                    <li><a href="2TransactionSearch.html">取引検索</a></li>
+                    <li><a href="3InvoiceList.html">請求書</a></li>
+                    <li><a href="4SendingMoneyList.html">振込一覧</a></li>
+                    <li class="active"><a href="5Calculation.html">精算管理</a></li>
+                    <li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+                    <li><a href="8SellercompanyList.html">事業者管理</a></li>
+                </ul>
+            </nav>
+            <a class="logoff" href=""><button>ログオフ</button></a>
+        </header>
+        <div class="table">
+            <h2>精算画面<span>(事業者)</span></h2>
+            <h3>取引検索</h3>
+                    <input type="date" name="" value="">~<input type="date" name="" value="">　<button type="submit" class=" btn req_btn">検索</button>
+            <form action="./602SendingMoney.html">
+                <div class="btn_content">
+                    <input type="submit" class="btn req_btn" value="振込金額精算">
+                </div>
+
+                <table class="detail">
+                    <thead>
+                        <tr>
+                            <th>事業者番号</th>
+                            <th>事業者名</th>
+                            <th>対象期間</th>
+                            <th>振込金額(税込)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123456789</td>
+                            <td>kamazon</td>
+                            <td>2020年12月</td>
+                            <td>36万円</td>
+                        </tr>
+                        <tr>
+                            <td>234567891</td>
+                            <td>rakutem</td>
+                            <td>2020年12月</td>
+                            <td>48万円</td>
+                        </tr>
+                        <tr>
+                            <td>345678910</td>
+                            <td>メル狩り</td>
+                            <td>2020年12月</td>
+                            <td>1万円</td>
+                        </tr>
+                        <tr>
+                            <td>567894561</td>
+                            <td>bigcamera</td>
+                            <td>2020年12月</td>
+                            <td>1円</td>
+                        </tr>    
+                    </tbody>
+                </table>
+            
+            </form>
+        </div>
+    </body>
+    </html>

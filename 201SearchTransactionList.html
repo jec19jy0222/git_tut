@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>取引検索結果</title>
+	<link href="./css/style.css" rel="stylesheet" type ="text/css">
+	<link rel="stylesheet" href="./css/nav.css">
+	<link rel="stylesheet" href="./css/table.css">
+	<script src="./script".js></script>
+</head>
+<body>
+	<header>
+		<img class="logo" src="./img/logo.png" alt="logo">
+		<nav>
+			<ul class="navi">
+				<li class="active"><a href="2TransactionSearch.html">取引検索</a></li>
+				<li><a href="3InvoiceList.html">請求書</a></li>
+				<li><a href="4SendingMoneyList.html">振込一覧</a></li>
+				<li><a href="5Calculation.html">精算管理</a></li>
+				<li><a href="7ConvenienceStoreList.html">企業管理</a></li>
+				<li><a href="8SellercompanyList.html">事業者管理</a></li>
+			</ul>
+		</nav>
+		<a class="logoff" href=""><button>ログオフ</button></a>
+	</header>
+	<main>
+		<h1>取引検索</h1>
+		<div id= "search_box">
+			<form>
+				<div class="search">
+				<!--取引日時-->
+					<div class="left">
+						<div class="date">
+							<h5>取引日時</h5>
+							<div class="condition">
+								<input type="date" id="start" name="date_start">
+								<input type="date" id="end" name="date_end">
+							</div>
+						</div><!--date end-->
+					</div><!--left end-->
+				<!--ステータス-->
+					<div class="right">
+						<div class="status"> 
+							<h5>ステータス</h5>
+							<div class="condition">
+								<input type="radio" id="none" name="status" value="none" checked>
+								<label for="none">なし</label>
+								<input type="radio" id="done" name="status" value="done">
+								<label for="done">入金済み</label>
+								<input type="radio" id="waiting" name="status" value="waiting">
+								<label for="waiting">入金待ち</label>
+								<input type="radio" id="cancel" name="status" value="cancel">
+								<label for="cancel">キャンセル</label>
+							</div>
+						</div><!--status end-->
+					</div><!--right end-->
+				</div><!--search end-->
+				<!---番号で検索-->
+				<div class="select_number">
+					<select name="number">
+						<option value="transaction_number" selected>取引番号</option>
+						<option value="seller_company_number">事業者番号</option>
+						<option value="convenience">企業番号</option>
+					</select>
+				</div>
+				<input class="input_txt" type="text">
+				<button type="submit" class=" btn req_btn">検索</button>
+			</form>
+        </div><!--serach_box end-->
+        <div class="main">
+            <h2>検索結果：4件</h2>
+            <button type=“button” class=" btn req_btn" onclick="location.href=''">+excelで作成</button>
+            <table border="1">
+                <tr>
+                    <th>取引番号</th>
+                    <th>事業者名</th>
+                    <th>取引日時</th>
+                    <th>支払金額(税込)</th>
+                    <th>入金有効期限</th>
+                    <th>支払状況</th>
+                    <th style="width: 80px;">　</th>
+                </tr>
+                <tr>
+                    <td>aaa</td>
+                    <td>bbb</td>
+                    <td>ccc</td>
+                    <td>ddd</td>
+                    <td>we</td>
+                    <td>rrr</td>
+                    <td><a href="202Transaction_detail.html" class="trade_detail">詳細</a></td>
+                </tr>
+            </table>
+            </div>
+	</main>
+</body>
+</html>
